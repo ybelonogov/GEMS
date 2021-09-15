@@ -5,4 +5,5 @@ CMakeFiles/gemes.dir/block.cpp.o: \
  ../block.cpp \
  ../block.h
 CMakeFiles/gemes.dir/main.cpp.o: \
+ ../block.h \
  ../main.cpp

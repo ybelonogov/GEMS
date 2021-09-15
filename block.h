@@ -6,9 +6,13 @@
 #define GEMES_BLOCK_H
 #include <SFML/Graphics.hpp>
 using namespace sf;
-
-class block:public Sprite {
-    int kind;
+class block : public Sprite {
+public:
+    int kind{};
+};
+class bomb : public block {
+public:
+    
 };
 
 
