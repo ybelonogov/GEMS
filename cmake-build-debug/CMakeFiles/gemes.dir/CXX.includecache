@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/alex/Desktop/Cplusplus/GEMS/block.cpp
+block.h
+/home/alex/Desktop/Cplusplus/GEMS/block.h
+
+/home/alex/Desktop/Cplusplus/GEMS/block.h
+SFML/Graphics.hpp
+-
+
+/home/alex/Desktop/Cplusplus/GEMS/main.cpp
+iostream
+-
+SFML/Graphics.hpp
+-
+bits/stdc++.h
+-
+time.h
+-
+
