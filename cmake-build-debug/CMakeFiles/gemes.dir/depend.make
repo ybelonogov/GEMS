@@ -4,6 +4,11 @@
 CMakeFiles/gemes.dir/block.cpp.o: \
  ../block.cpp \
  ../block.h
+CMakeFiles/gemes.dir/game.cpp.o: \
+ ../block.h \
+ ../game.cpp \
+ ../game.h
 CMakeFiles/gemes.dir/main.cpp.o: \
  ../block.h \
+ ../game.h \
  ../main.cpp

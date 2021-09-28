@@ -153,6 +153,30 @@ block.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/block.cpp.s
 .PHONY : block.cpp.s
 
+game.o: game.cpp.o
+.PHONY : game.o
+
+# target to build an object file
+game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/game.cpp.o
+.PHONY : game.cpp.o
+
+game.i: game.cpp.i
+.PHONY : game.i
+
+# target to preprocess a source file
+game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/game.cpp.i
+.PHONY : game.cpp.i
+
+game.s: game.cpp.s
+.PHONY : game.s
+
+# target to generate assembly for a file
+game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/game.cpp.s
+.PHONY : game.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -177,6 +201,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+shift.o: shift.cpp.o
+.PHONY : shift.o
+
+# target to build an object file
+shift.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/shift.cpp.o
+.PHONY : shift.cpp.o
+
+shift.i: shift.cpp.i
+.PHONY : shift.i
+
+# target to preprocess a source file
+shift.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/shift.cpp.i
+.PHONY : shift.cpp.i
+
+shift.s: shift.cpp.s
+.PHONY : shift.s
+
+# target to generate assembly for a file
+shift.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/shift.cpp.s
+.PHONY : shift.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +237,15 @@ help:
 	@echo "... block.o"
 	@echo "... block.i"
 	@echo "... block.s"
+	@echo "... game.o"
+	@echo "... game.i"
+	@echo "... game.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... shift.o"
+	@echo "... shift.i"
+	@echo "... shift.s"
 .PHONY : help
 
 

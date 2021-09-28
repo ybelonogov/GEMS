@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/alex/Desktop/Cplusplus/GEMS/block.cpp" "/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles/gemes.dir/block.cpp.o"
+  "/home/alex/Desktop/Cplusplus/GEMS/game.cpp" "/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles/gemes.dir/game.cpp.o"
   "/home/alex/Desktop/Cplusplus/GEMS/main.cpp" "/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles/gemes.dir/main.cpp.o"
+  "/home/alex/Desktop/Cplusplus/GEMS/shift.cpp" "/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles/gemes.dir/shift.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

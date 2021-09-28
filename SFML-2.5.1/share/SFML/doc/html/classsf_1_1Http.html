@@ -187,7 +187,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Send a HTTP request and return the server's response. </p>
-<p>You must have a valid host before sending a request (see setHost). Any missing mandatory header field in the request will be added with an appropriate value. Warning: this function waits for the server's response and may not return instantly; use a thread if you don't want to block your application, or use a timeout to limit the time to wait. A value of <a class="el" href="classsf_1_1Time.html#a8db127b632fa8da21550e7282af11fa0" title="Predefined &quot;zero&quot; time value. ">Time::Zero</a> means that the client will use the system default timeout (which is usually pretty long).</p>
+<p>You must have a valid host before sending a request (see setHost). Any missing mandatory header field in the request will be added with an appropriate value. Warning: this function waits for the server's response and may not return instantly; use a thread if you don't want to Block your application, or use a timeout to limit the time to wait. A value of <a class="el" href="classsf_1_1Time.html#a8db127b632fa8da21550e7282af11fa0" title="Predefined &quot;zero&quot; time value. ">Time::Zero</a> means that the client will use the system default timeout (which is usually pretty long).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">request</td><td><a class="el" href="classsf_1_1Http_1_1Request.html" title="Define a HTTP request. ">Request</a> to send </td></tr>

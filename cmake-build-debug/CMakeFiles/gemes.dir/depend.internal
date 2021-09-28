@@ -4,6 +4,12 @@
 CMakeFiles/gemes.dir/block.cpp.o
  /home/alex/Desktop/Cplusplus/GEMS/block.cpp
  /home/alex/Desktop/Cplusplus/GEMS/block.h
+CMakeFiles/gemes.dir/game.cpp.o
+ /home/alex/Desktop/Cplusplus/GEMS/block.h
+ /home/alex/Desktop/Cplusplus/GEMS/game.cpp
+ /home/alex/Desktop/Cplusplus/GEMS/game.h
 CMakeFiles/gemes.dir/main.cpp.o
  /home/alex/Desktop/Cplusplus/GEMS/block.h
+ /home/alex/Desktop/Cplusplus/GEMS/game.h
  /home/alex/Desktop/Cplusplus/GEMS/main.cpp
+CMakeFiles/gemes.dir/shift.cpp.o

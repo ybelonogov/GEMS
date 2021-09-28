@@ -3,5 +3,5 @@ project(GEMS)
 
 set(CMAKE_CXX_STANDARD 20)
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
-add_executable(gemes main.cpp block.cpp block.h)
+add_executable(gemes main.cpp Block.cpp Block.h Game.cpp Game.h shift.cpp shift.h)
 target_link_libraries(gemes sfml-graphics sfml-audio)

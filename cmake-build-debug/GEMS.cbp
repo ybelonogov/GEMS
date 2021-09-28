@@ -88,7 +88,19 @@
 		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/block.h">
 			<Option target="gemes"/>
 		</Unit>
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/game.cpp">
+			<Option target="gemes"/>
+		</Unit>
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/game.h">
+			<Option target="gemes"/>
+		</Unit>
 		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/main.cpp">
+			<Option target="gemes"/>
+		</Unit>
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/shift.cpp">
+			<Option target="gemes"/>
+		</Unit>
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/shift.h">
 			<Option target="gemes"/>
 		</Unit>
 		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/CMakeLists.txt">
