@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gemes.dir/block.cpp.o"
-  "CMakeFiles/gemes.dir/game.cpp.o"
+  "CMakeFiles/gemes.dir/Block.cpp.o"
+  "CMakeFiles/gemes.dir/Game.cpp.o"
   "CMakeFiles/gemes.dir/main.cpp.o"
-  "CMakeFiles/gemes.dir/shift.cpp.o"
   "gemes"
   "gemes.pdb"
 )

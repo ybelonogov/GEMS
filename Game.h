@@ -16,16 +16,17 @@ class Game{
     static const int N = 10;
     const int Weight = 111;
     const int Height = 128;
-    const int colorCount = 6;
+    const int colorCount = 7;
     shared_ptr<Block> field[M][N];
     vector<Texture> kinds;
+    bool used[10][10];
     void
-    checkBrick(int x, int y, bool used[10][10], int kind, vector<pair<int, int>> &way);
+    checkBrick(int x, int y,  int kind, vector<pair<int, int>> &way);
     void shift();
     pair<int,int> clickCheck( int mouseX, int mouseY);
     void my_swap(shared_ptr<Block> a,shared_ptr<Block> b);
     void check();
-    void draw(RenderWindow app);
+    void fildInfo();
 public:
     void start();
     void play();

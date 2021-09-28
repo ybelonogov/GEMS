@@ -6,37 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/alex/Desktop/Cplusplus/GEMS/block.cpp
-block.h
-/home/alex/Desktop/Cplusplus/GEMS/block.h
-
-/home/alex/Desktop/Cplusplus/GEMS/block.h
+/home/alex/Desktop/Cplusplus/GEMS/Block.h
 SFML/Graphics.hpp
 -
 memory
 -
 
-/home/alex/Desktop/Cplusplus/GEMS/game.cpp
+/home/alex/Desktop/Cplusplus/GEMS/Game.cpp
 iostream
 -
-game.h
-/home/alex/Desktop/Cplusplus/GEMS/game.h
+Game.h
+/home/alex/Desktop/Cplusplus/GEMS/Game.h
 
-/home/alex/Desktop/Cplusplus/GEMS/game.h
+/home/alex/Desktop/Cplusplus/GEMS/Game.h
 SFML/Graphics.hpp
 -
-block.h
-/home/alex/Desktop/Cplusplus/GEMS/block.h
-
-/home/alex/Desktop/Cplusplus/GEMS/main.cpp
-iostream
--
-SFML/Graphics.hpp
--
-bits/stdc++.h
--
-time.h
--
-game.h
-/home/alex/Desktop/Cplusplus/GEMS/game.h
+Block.h
+/home/alex/Desktop/Cplusplus/GEMS/Block.h
 

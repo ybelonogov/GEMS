@@ -4,11 +4,11 @@
 
 #include "Block.h"
 
-bool Classic::del(shared_ptr<Block> field[10][10], vector<Texture> kinds) {
+bool Classic::del(shared_ptr<Block> field[10][10], vector<Texture> kinds,int x,int y) {
     return true;
 }
 
-bool Bomb::del(shared_ptr<Block> field[10][10], vector<Texture> kinds) {
+bool Bomb::del(shared_ptr<Block> field[10][10], vector<Texture> kinds,int x,int y) {
     for (int i = 0; i < 5; i++) {
         int x = rand() % 10;
         int y = rand() % 10;
@@ -19,7 +19,7 @@ bool Bomb::del(shared_ptr<Block> field[10][10], vector<Texture> kinds) {
     return true;
 }
 
-bool Recolor::del(shared_ptr<Block> field[10][10], vector<Texture> kinds) {
+bool Recolor::del(shared_ptr<Block> field[10][10], vector<Texture> kinds,int x,int y) {
     for (int i = 0; i < 2; i++) {
         int xx = rand() % 10;
         int yy = rand() % 10;

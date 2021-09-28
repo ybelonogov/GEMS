@@ -82,25 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/block.cpp">
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/Block.cpp">
 			<Option target="gemes"/>
 		</Unit>
-		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/block.h">
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/Block.h">
 			<Option target="gemes"/>
 		</Unit>
-		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/game.cpp">
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/Game.cpp">
 			<Option target="gemes"/>
 		</Unit>
-		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/game.h">
+		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/Game.h">
 			<Option target="gemes"/>
 		</Unit>
 		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/main.cpp">
-			<Option target="gemes"/>
-		</Unit>
-		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/shift.cpp">
-			<Option target="gemes"/>
-		</Unit>
-		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/shift.h">
 			<Option target="gemes"/>
 		</Unit>
 		<Unit filename="/home/alex/Desktop/Cplusplus/GEMS/CMakeLists.txt">

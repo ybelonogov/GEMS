@@ -129,53 +129,53 @@ gemes/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/build
 .PHONY : gemes/fast
 
-block.o: block.cpp.o
-.PHONY : block.o
+Block.o: Block.cpp.o
+.PHONY : Block.o
 
 # target to build an object file
-block.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/block.cpp.o
-.PHONY : block.cpp.o
+Block.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/Block.cpp.o
+.PHONY : Block.cpp.o
 
-block.i: block.cpp.i
-.PHONY : block.i
+Block.i: Block.cpp.i
+.PHONY : Block.i
 
 # target to preprocess a source file
-block.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/block.cpp.i
-.PHONY : block.cpp.i
+Block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/Block.cpp.i
+.PHONY : Block.cpp.i
 
-block.s: block.cpp.s
-.PHONY : block.s
+Block.s: Block.cpp.s
+.PHONY : Block.s
 
 # target to generate assembly for a file
-block.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/block.cpp.s
-.PHONY : block.cpp.s
+Block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/Block.cpp.s
+.PHONY : Block.cpp.s
 
-game.o: game.cpp.o
-.PHONY : game.o
+Game.o: Game.cpp.o
+.PHONY : Game.o
 
 # target to build an object file
-game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/game.cpp.o
-.PHONY : game.cpp.o
+Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/Game.cpp.o
+.PHONY : Game.cpp.o
 
-game.i: game.cpp.i
-.PHONY : game.i
+Game.i: Game.cpp.i
+.PHONY : Game.i
 
 # target to preprocess a source file
-game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/game.cpp.i
-.PHONY : game.cpp.i
+Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/Game.cpp.i
+.PHONY : Game.cpp.i
 
-game.s: game.cpp.s
-.PHONY : game.s
+Game.s: Game.cpp.s
+.PHONY : Game.s
 
 # target to generate assembly for a file
-game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/game.cpp.s
-.PHONY : game.cpp.s
+Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/Game.cpp.s
+.PHONY : Game.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -201,30 +201,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-shift.o: shift.cpp.o
-.PHONY : shift.o
-
-# target to build an object file
-shift.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/shift.cpp.o
-.PHONY : shift.cpp.o
-
-shift.i: shift.cpp.i
-.PHONY : shift.i
-
-# target to preprocess a source file
-shift.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/shift.cpp.i
-.PHONY : shift.cpp.i
-
-shift.s: shift.cpp.s
-.PHONY : shift.s
-
-# target to generate assembly for a file
-shift.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemes.dir/build.make CMakeFiles/gemes.dir/shift.cpp.s
-.PHONY : shift.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -234,18 +210,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gemes"
-	@echo "... block.o"
-	@echo "... block.i"
-	@echo "... block.s"
-	@echo "... game.o"
-	@echo "... game.i"
-	@echo "... game.s"
+	@echo "... Block.o"
+	@echo "... Block.i"
+	@echo "... Block.s"
+	@echo "... Game.o"
+	@echo "... Game.i"
+	@echo "... Game.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... shift.o"
-	@echo "... shift.i"
-	@echo "... shift.s"
 .PHONY : help
 
 

@@ -6,7 +6,7 @@
 #include "Game.h"
 
 void Game::check() {
-    bool used[10][10];
+
     for (int x = 0; x < 10; x++) {
         for (int y = 0; y < 10; y++) {
             if (field[x][y]) {
@@ -14,62 +14,40 @@ void Game::check() {
                     for (int j = 0; j < 10; j++)
                         used[i][j] = 0;
                 vector<pair<int, int>> way;
-                checkBrick(x, y, used, field[x][y]->kind, way);
-//                for(int i = 0; i < 10; i++) {
-//                    cout<<endl;
-//                    for (int j = 0; j < 10; j++) {
-//                        if (field[i][j])
-//                            cout<<field[i][j]->kind <<" ";
-//                        else
-//                            cout<<-1<<" ";
-//                    }
-//                }
-//                cout<<endl;
+                checkBrick(x, y,  field[x][y]->kind, way);
                 if (way.size() >= 3)
                     for (auto i: way) {
                         if (field[i.first][i.second])
-                            if (field[i.first][i.second]->del(field, kinds))
+                            if (field[i.first][i.second]->del(field, kinds, i.first, i.second))
                                 field[i.first][i.second] = nullptr;
-//                    std::cerr<<"del "<<i.first<<" "<<i.second<<endl;
                     }
-//                for(int i = 0; i < 10; i++) {
-//                    cout<<endl;
-//                    for (int j = 0; j < 10; j++) {
-//                        if (field[i][j])
-//                            cout<<field[i][j]->kind <<" ";
-//                        else
-//                            cout<<-1<<" ";
-//                    }
-//                }
-
-//                cerr<<"efwf";
-
             }
         }
     }
-    shift();
+
 }
 
 void
-Game::checkBrick(int x, int y, bool used[10][10], int kind, vector<pair<int, int>> &way
+Game::checkBrick(int x, int y, int kind, vector<pair<int, int>> &way
 ) {
     way.push_back(make_pair(x, y));
     used[x][y] = 1;
     if (field[x - 1][y])
         if (x != 0 && field[x - 1][y]->kind == kind && used[x - 1][y] == 0) {
-            checkBrick(x - 1, y, used, kind, way);
+            checkBrick(x - 1, y, kind, way);
         }
     if (field[x + 1][y])
         if (x != 9 && field[x + 1][y]->kind == kind && used[x + 1][y] == 0) {
-            checkBrick(x + 1, y, used, kind, way);
+            checkBrick(x + 1, y,  kind, way);
         }
+//
     if (field[x][y - 1])
         if (y != 0 && field[x][y - 1]->kind == kind && used[x][y - 1] == 0) {
-            checkBrick(x, y - 1, used, kind, way);
+            checkBrick(x, y - 1,  kind, way);
         }
     if (field[x][y + 1])
         if (y != 9 && field[x][y + 1]->kind == kind && used[x][y + 1] == 0) {
-            checkBrick(x, y + 1, used, kind, way);
+            checkBrick(x, y + 1,  kind, way);
         }
 
 }
@@ -111,17 +89,17 @@ void Game::start() {
         for (int y = 0; y < N; y++) {
             int kind = rand() % colorCount;
             int type = rand() % 3;
-            if (type == 1)
-                field[x][y] = make_shared<Bomb>();
+//            if (type == 1)
+            if (true)
+                field[x][y] = make_shared<Classic>();
             else if (type == 2)
                 field[x][y] = make_shared<Recolor>();
             else
-                field[x][y] = make_shared<Classic>();
+                field[x][y] = make_shared<Bomb>();
             field[x][y]->setTexture(kinds[kind]);
             field[x][y]->setPosition(x * Weight, y * Height);
             field[x][y]->kind = kind;
-            field[x][y]->x = x;
-            field[x][y]->y = y;
+
         }
     }
 
@@ -145,9 +123,9 @@ void Game::play() {
 
                 int mouse_x = event.mouseButton.x;
                 int mouse_y = event.mouseButton.y;
-                cout << mouse_x << " " << mouse_y << endl;
+//                cout << mouse_x << " " << mouse_y << endl;
                 pair<int, int> cord = clickCheck(mouse_x, mouse_y);
-                cout << cord.first << " " << cord.second << endl << endl;
+//                cout << cord.first << " " << cord.second << endl << endl;
                 if (stack != make_pair(-1, -1) && stack != cord) {
                     swap(field[cord.first][cord.second], field[stack.first][stack.second]);
 //                    my_swap(field[cord.first][cord.second], field[stack.first][stack.second]);
@@ -155,22 +133,26 @@ void Game::play() {
                     cout << stack.first << " " << stack.second << endl;
                     stack = make_pair(-1, -1);
                     cout << endl;
+
+//                    fildInfo();
                 } else
                     stack = cord;
             }
         }
-        check();
+        shift();
         app.clear();
-//        field[2][3]->del(field,kinds);
-
+//        fildInfo();
+        cout<<endl;
         for (int x = 0; x < M; x++) {
             for (int y = 0; y < N; y++) {
-                if (field[x][y])
-                    //                if (x!=5 or y!=5 )
+                if (field[x][y]) {
+                    field[x][y]->setTexture(kinds[field[x][y]->kind]);
                     app.draw(*field[x][y]);
+                    cout << field[y][x]->kind << " ";
+                }
             }
+            cout<<endl;
         }
-//        test( field);
         app.display();
 
     }
@@ -180,54 +162,65 @@ void Game::play() {
 void Game::shift() {
 
     bool changes = true;
+    int col = 0;
     while (changes) {
         changes = false;
+
+        check();
+
+//        cout << "check " << col << endl;
+        col = 0;
         for (int x = 0; x < M; x++) {
             vector<shared_ptr<Block>> newColumn;
             for (int y = 0; y < N; y++) {
-                if (field[x][y])
+                if (field[x][y]) {
+                    col++;
                     newColumn.push_back(field[x][y]);
-
+                }
             }
             for (int y = 0; y < newColumn.size(); y++) {
                 field[x][y] = newColumn[y];
-                changes = true;
+
+
             }
-//            generate
+            for (int y = newColumn.size(); y < N; y++) {
+                field[x][y] = nullptr;
+            }
+            if (newColumn.size() < N)
+                changes = true;
             for (int y = newColumn.size(); y < N; y++) {
                 int kind = rand() % colorCount;
                 int type = rand() % 3;
-                if (type == 1)
-                    field[x][y] = make_shared<Bomb>();
+//                if (type == 1)
+                if (true)
+                    field[x][y] = make_shared<Classic>();
                 else if (type == 2)
                     field[x][y] = make_shared<Recolor>();
                 else
-                    field[x][y] = make_shared<Classic>();
+                    field[x][y] = make_shared<Bomb>();
                 field[x][y]->setTexture(kinds[kind]);
                 field[x][y]->setPosition(x * Weight, y * Height);
                 field[x][y]->kind = kind;
-                field[x][y]->x = x;
-                field[x][y]->y = y;
+
             }
-
+            vector<shared_ptr<Block>>().swap(newColumn);
         }
     }
+//    cout << "shift" << endl;
+
 
 }
 
-void Game::draw(RenderWindow app) {
-    app.clear();
-//        field[2][3]->del(field,kinds);
-
-    for (int x = 0; x < M; x++) {
-        for (int y = 0; y < N; y++) {
+void Game::fildInfo() {
+    for (int x = 0; x < 10; x++) {
+        cout << endl;
+        for (int y = 0; y < 10; y++) {
             if (field[x][y])
-                //                if (x!=5 or y!=5 )
-                app.draw(*field[x][y]);
+//                cout << field[y][x]->getTexture()->getMaximumSize() << " ";
+                cout << field[y][x]->kind << " ";
+            else
+                cout << -1 << " ";
         }
     }
-//        test( field);
-    app.display();
-
-}
-
+    cout << endl;
+};

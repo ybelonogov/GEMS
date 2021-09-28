@@ -11,24 +11,22 @@ using namespace sf;
 using namespace std;
 class Block : public Sprite {
 public:
-    int kind{};
-    int x;
-    int y;
-    virtual bool del( shared_ptr<Block>  field[10][10], vector<Texture> kinds) = 0;
+    int kind;
+    virtual bool del( shared_ptr<Block>  field[10][10], vector<Texture> kinds,int x,int y) = 0;
 };
 
 class Classic : public Block {
 public:
-    bool del(shared_ptr<Block>  field[10][10], vector<Texture> kinds);
+    bool del(shared_ptr<Block>  field[10][10], vector<Texture> kinds,int x,int y);
 };
 
 class Bomb : public Block {
 public:
-    bool del(shared_ptr<Block>  field[10][10], vector<Texture> kinds);
+    bool del(shared_ptr<Block>  field[10][10], vector<Texture> kinds,int x,int y);
 };
 class Recolor : public Block {
 public:
-    bool del(shared_ptr<Block>  field[10][10], vector<Texture> kinds);
+    bool del(shared_ptr<Block>  field[10][10], vector<Texture> kinds,int x,int y);
 };
 
 

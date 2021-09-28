@@ -79,66 +79,51 @@ CMakeFiles/gemes.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gemes.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Desktop/Cplusplus/GEMS/main.cpp -o CMakeFiles/gemes.dir/main.cpp.s
 
-CMakeFiles/gemes.dir/block.cpp.o: CMakeFiles/gemes.dir/flags.make
-CMakeFiles/gemes.dir/block.cpp.o: ../block.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gemes.dir/block.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gemes.dir/block.cpp.o -c /home/alex/Desktop/Cplusplus/GEMS/block.cpp
+CMakeFiles/gemes.dir/Block.cpp.o: CMakeFiles/gemes.dir/flags.make
+CMakeFiles/gemes.dir/Block.cpp.o: ../Block.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gemes.dir/Block.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gemes.dir/Block.cpp.o -c /home/alex/Desktop/Cplusplus/GEMS/Block.cpp
 
-CMakeFiles/gemes.dir/block.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gemes.dir/block.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Desktop/Cplusplus/GEMS/block.cpp > CMakeFiles/gemes.dir/block.cpp.i
+CMakeFiles/gemes.dir/Block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gemes.dir/Block.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Desktop/Cplusplus/GEMS/Block.cpp > CMakeFiles/gemes.dir/Block.cpp.i
 
-CMakeFiles/gemes.dir/block.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gemes.dir/block.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Desktop/Cplusplus/GEMS/block.cpp -o CMakeFiles/gemes.dir/block.cpp.s
+CMakeFiles/gemes.dir/Block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gemes.dir/Block.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Desktop/Cplusplus/GEMS/Block.cpp -o CMakeFiles/gemes.dir/Block.cpp.s
 
-CMakeFiles/gemes.dir/game.cpp.o: CMakeFiles/gemes.dir/flags.make
-CMakeFiles/gemes.dir/game.cpp.o: ../game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gemes.dir/game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gemes.dir/game.cpp.o -c /home/alex/Desktop/Cplusplus/GEMS/game.cpp
+CMakeFiles/gemes.dir/Game.cpp.o: CMakeFiles/gemes.dir/flags.make
+CMakeFiles/gemes.dir/Game.cpp.o: ../Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gemes.dir/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gemes.dir/Game.cpp.o -c /home/alex/Desktop/Cplusplus/GEMS/Game.cpp
 
-CMakeFiles/gemes.dir/game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gemes.dir/game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Desktop/Cplusplus/GEMS/game.cpp > CMakeFiles/gemes.dir/game.cpp.i
+CMakeFiles/gemes.dir/Game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gemes.dir/Game.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Desktop/Cplusplus/GEMS/Game.cpp > CMakeFiles/gemes.dir/Game.cpp.i
 
-CMakeFiles/gemes.dir/game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gemes.dir/game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Desktop/Cplusplus/GEMS/game.cpp -o CMakeFiles/gemes.dir/game.cpp.s
-
-CMakeFiles/gemes.dir/shift.cpp.o: CMakeFiles/gemes.dir/flags.make
-CMakeFiles/gemes.dir/shift.cpp.o: ../shift.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gemes.dir/shift.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gemes.dir/shift.cpp.o -c /home/alex/Desktop/Cplusplus/GEMS/shift.cpp
-
-CMakeFiles/gemes.dir/shift.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gemes.dir/shift.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alex/Desktop/Cplusplus/GEMS/shift.cpp > CMakeFiles/gemes.dir/shift.cpp.i
-
-CMakeFiles/gemes.dir/shift.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gemes.dir/shift.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Desktop/Cplusplus/GEMS/shift.cpp -o CMakeFiles/gemes.dir/shift.cpp.s
+CMakeFiles/gemes.dir/Game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gemes.dir/Game.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alex/Desktop/Cplusplus/GEMS/Game.cpp -o CMakeFiles/gemes.dir/Game.cpp.s
 
 # Object files for target gemes
 gemes_OBJECTS = \
 "CMakeFiles/gemes.dir/main.cpp.o" \
-"CMakeFiles/gemes.dir/block.cpp.o" \
-"CMakeFiles/gemes.dir/game.cpp.o" \
-"CMakeFiles/gemes.dir/shift.cpp.o"
+"CMakeFiles/gemes.dir/Block.cpp.o" \
+"CMakeFiles/gemes.dir/Game.cpp.o"
 
 # External object files for target gemes
 gemes_EXTERNAL_OBJECTS =
 
 gemes: CMakeFiles/gemes.dir/main.cpp.o
-gemes: CMakeFiles/gemes.dir/block.cpp.o
-gemes: CMakeFiles/gemes.dir/game.cpp.o
-gemes: CMakeFiles/gemes.dir/shift.cpp.o
+gemes: CMakeFiles/gemes.dir/Block.cpp.o
+gemes: CMakeFiles/gemes.dir/Game.cpp.o
 gemes: CMakeFiles/gemes.dir/build.make
 gemes: /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1
 gemes: /usr/lib/x86_64-linux-gnu/libsfml-audio.so.2.5.1
 gemes: /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1
 gemes: /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
 gemes: CMakeFiles/gemes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable gemes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alex/Desktop/Cplusplus/GEMS/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable gemes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gemes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
